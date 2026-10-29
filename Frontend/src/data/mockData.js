@@ -7,11 +7,11 @@ const img = (seed, w = 700, h = 440) => `https://picsum.photos/seed/${seed}/${w}
 export const TRANSACTION_MODES = ['Buy', 'Rent', 'Commercial', 'Projects'];
 
 export const CATEGORIES = [
-  { id: 'apartments', title: 'Apartments & Flats', count: '12,400+ listings', icon: 'office-building', bg: '#d8e8c7' },
-  { id: 'villas', title: 'Independent Villas', count: '3,800+ listings', icon: 'home-variant', bg: '#d8e8c7' },
-  { id: 'commercial', title: 'Commercial & Office', count: '5,200+ spaces', icon: 'domain', bg: '#f1eee7' },
-  { id: 'plots', title: 'Plots & Land', count: '2,100+ plots', icon: 'terrain', bg: '#d8e8c7' },
-  { id: 'builder', title: 'Builder Projects', count: '850+ RERA verified', icon: 'crane', bg: '#ffdea7' },
+  { id: 'apartments', title: 'Apartments & Flats', count: '0', icon: 'office-building', bg: '#d8e8c7' },
+  { id: 'villas', title: 'Independent Villas', count: '0', icon: 'home-variant', bg: '#d8e8c7' },
+  { id: 'commercial', title: 'Commercial & Office', count: '0', icon: 'domain', bg: '#f1eee7' },
+  { id: 'plots', title: 'Plots & Land', count: '0', icon: 'terrain', bg: '#d8e8c7' },
+  { id: 'builder', title: 'Builder Projects', count: '0', icon: 'crane', bg: '#ffdea7' },
 ];
 
 export const FEATURED_PROPERTIES = [

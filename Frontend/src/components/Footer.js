@@ -24,18 +24,18 @@ export default function Footer() {
     <View style={styles.wrap}>
       {/* Brand */}
       <View style={styles.brand}>
-        <View style={styles.logoRow}>
+        {/* <View style={styles.logoRow}>
           <MaterialCommunityIcons name="home-city" size={22} color={colors.primary} />
           <Text style={styles.logoText}>PropConnect</Text>
         </View>
         <Text style={styles.tagline}>
           India's most trusted real-estate network — connecting buyers, sellers &amp; renters
           across 50+ cities.
-        </Text>
+        </Text> */}
       </View>
 
       {/* Quick links */}
-      <View style={styles.linksGrid}>
+      {/* <View style={styles.linksGrid}>
         {LINKS.map((l) => (
           <Pressable
             key={l.label}
@@ -46,14 +46,14 @@ export default function Footer() {
             <Text style={styles.linkText}>{l.label}</Text>
           </Pressable>
         ))}
-      </View>
+      </View> */}
 
       {/* Divider */}
       <View style={styles.divider} />
 
       {/* Social + copyright */}
       <View style={styles.bottom}>
-        <Text style={styles.copy}>© {new Date().getFullYear()} PropConnect Pvt. Ltd.</Text>
+        <Text style={styles.copy}>© {new Date().getFullYear()} Probridge Pvt. Ltd.</Text>
         <View style={styles.social}>
           {SOCIAL.map((s) => (
             <Pressable

@@ -18,19 +18,8 @@ export default function HeroSection({ mode, onChangeMode, searchProps }) {
       />
 
       <View style={styles.content}>
-        <View style={styles.badge}>
-          <MaterialCommunityIcons name="shield-check" size={14} color={colors.primary} />
-          <Text style={styles.badgeText}>India's Trusted Real Estate Network</Text>
-        </View>
-
         <View>
-          <Text style={styles.h1}>
-            Your Property Goals.{'\n'}
-            <Text style={{ color: colors.primary }}>Our Connection.</Text>
-          </Text>
-          <Text style={styles.sub}>
-            Discover verified homes, rentals, commercial spaces & new projects across India.
-          </Text>
+          {/* h1 / sub can be re-enabled here */}
         </View>
 
         <View style={{ paddingTop: 4 }}>
@@ -46,28 +35,8 @@ export default function HeroSection({ mode, onChangeMode, searchProps }) {
 }
 
 const styles = StyleSheet.create({
-  wrap: { paddingTop: 16, paddingBottom: 24, paddingHorizontal: spacing.screen },
+  wrap: { paddingTop: 8, paddingBottom: 24, paddingHorizontal: spacing.screen },
   content: { gap: 8 },
-  badge: {
-    alignSelf: 'flex-start',
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 6,
-    backgroundColor: colors.surfaceMuted,
-    paddingHorizontal: 10,
-    paddingVertical: 4,
-    borderRadius: radius.pill,
-    ...shadows.soft,
-  },
-  badgeText: {
-    fontFamily: fonts.inter.bold,
-    fontSize: 12,
-    lineHeight: 16,
-    letterSpacing: 0.6,
-    textTransform: 'uppercase',
-    color: colors.textPrimary,
-    flexShrink: 1,
-  },
   h1: {
     fontFamily: fonts.manrope.bold,
     fontSize: 26,

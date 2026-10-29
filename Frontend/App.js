@@ -17,6 +17,7 @@ import {
 
 import HomeScreen from './src/screen/HomeScreen';
 import { colors } from './src/theme';
+import { SavedProvider } from './src/context/SavedContext';
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -38,9 +39,11 @@ export default function App() {
   }
 
   return (
-    <SafeAreaProvider>
-      <StatusBar style="dark" />
-      <HomeScreen />
-    </SafeAreaProvider>
+    <SavedProvider>
+      <SafeAreaProvider>
+        <StatusBar style="dark" />
+        <HomeScreen />
+      </SafeAreaProvider>
+    </SavedProvider>
   );
 }

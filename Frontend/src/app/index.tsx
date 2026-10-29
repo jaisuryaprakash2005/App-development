@@ -1,5 +1,3 @@
-import App from "../../App";
+import HomeScreen from '../screen/HomeScreen';
 
-export default function Page() {
-  return <App />;
-}
+export default HomeScreen;

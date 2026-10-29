@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Image, Pressable, StyleSheet, Text, View } from 'react-native';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { colors, fonts, radius, shadows } from '../theme';
+import { useSaved } from '../context/SavedContext';
 
 const BADGE_BG = {
   white: 'rgba(255,255,255,0.9)',
@@ -21,7 +22,8 @@ function Badge({ badge }) {
 }
 
 export default function PropertyCard({ property, onPressDetails, onPressSecondary }) {
-  const [saved, setSaved] = useState(false);
+  const { isSaved, toggle } = useSaved();
+  const saved = isSaved(property.id);
   const p = property;
 
   return (
@@ -38,7 +40,7 @@ export default function PropertyCard({ property, onPressDetails, onPressSecondar
 
         <Pressable
           style={styles.saveBtn}
-          onPress={() => setSaved((s) => !s)}
+          onPress={() => toggle(p.id)}
           accessibilityRole="button"
           accessibilityLabel={`Save ${p.title}`}
         >

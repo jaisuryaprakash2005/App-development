@@ -1,21 +1,26 @@
 {
   "expo": {
-    "name": "Frontend",
-    "slug": "Frontend",
+    "name": "ProBridge",
+    "slug": "ProBridge",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "frontend",
-    "userInterfaceStyle": "automatic",
-    "ios": {},
+    "scheme": "probridge",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "bundleIdentifier": "com.probridge.app",
+      "newArchEnabled": true
+    },
     "android": {
+      "package": "com.probridge.app",
       "adaptiveIcon": {
         "backgroundColor": "#E6F4FE",
         "foregroundImage": "./assets/images/android-icon-foreground.png",
         "backgroundImage": "./assets/images/android-icon-background.png",
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "newArchEnabled": true
     },
     "web": {
       "output": "static",
@@ -32,11 +37,11 @@
         }
       ],
       "expo-font",
-      "expo-status-bar"
+      "expo-status-bar",
+      "expo-web-browser"
     ],
     "experiments": {
-      "typedRoutes": true,
-      "reactCompiler": true
+      "typedRoutes": true
     }
   }
 }

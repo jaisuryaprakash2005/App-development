@@ -26,7 +26,8 @@ export default function CategoryCarousel({ data, onPressCategory }) {
   return (
     <View style={styles.section}>
       <View style={{ paddingHorizontal: spacing.screen }}>
-        <SectionHeader title="Explore by Category" titleSize={18} trailingText="Tap to filter" />
+        <SectionHeader title="Explore by Category" titleSize={18} />
+        {/* trailingText="Tap to filter" */}
       </View>
       <FlatList
         horizontal
